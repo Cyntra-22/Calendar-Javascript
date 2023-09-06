@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Using External JavaScript</title>
-    <style type="text/css">
-      table {
-        width: 400px;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2023 Calendar</title>
+    <style>
+      /* Basic styles for the calendar table (same as previous response) */
+      .calendar-table {
+        width: 50%;
         border-collapse: collapse;
-        background-color: lightblue;
       }
-      table,
-      td,
-      th {
-        border: 1px solid black;
-        padding: 4px;
+
+      .calendar-table th,
+      .calendar-table td {
+        border: 1px solid #e14dda;
+        padding: 10px;
+        text-align: center;
       }
-      th {
-        text-align: left;
-        color: white;
-        background-color: rgb(241, 129, 249);
+
+      .calendar-table th {
+        background-color: #e7a7e3;
       }
-      tr.oddrow {
-        background-color: white;
+
+      .calendar-table td {
+        background-color: #ffffff;
+      }
+
+      .calendar-table td:hover {
+        background-color: #e0e0f0;
+        cursor: pointer;
       }
     </style>
-    <script src="src/function.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div id="calendar-container"></div> <br/><br/>
+    <button id="prev-month-btn">&#60;</button>
+    <button id="next-month-btn">&#62;</button>
+    <script src="src/function.js"></script>
+  </body>
 </html>
