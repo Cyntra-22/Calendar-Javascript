@@ -52,6 +52,9 @@ function showMonthOf2023(monthIndex) {
     const row = document.createElement("tr");
     for (let j = 0; j < 7; j++) {
       const cell = document.createElement("td");
+      if (j === 0) {
+        cell.style.color = "red";
+      }
       if (i === 0 && j < firstDay) {
         cell.textContent = "";
       } else if (currentDate <= daysInMonth) {
