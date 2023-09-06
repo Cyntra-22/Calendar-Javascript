@@ -1,0 +1,10 @@
+document.writeln("<table>");
+document.writeln("<caption> August 2023 Calendar</caption>");
+document.writeln("<thead><tr><th>Sun</th>");
+document.writeln("<th>Mon</th>");
+document.writeln("<th>Tue</th>");
+document.writeln("<th>Wed</th>");
+document.writeln("<th>Thu</th>");
+document.writeln("<th>Fri</th>");
+document.writeln("<th>Sat</th>");
+document.writeln("</tr></thead><tbody>");
